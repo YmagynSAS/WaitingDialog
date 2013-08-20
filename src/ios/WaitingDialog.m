@@ -23,7 +23,7 @@
 
 -(UIAlertView *)waitingDialog {
     if (!_waitingDialog) {
-        _waitingDialog = [[[UIAlertView alloc] initWithTitle:@"" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil] autorelease];
+        _waitingDialog = [[UIAlertView alloc] initWithTitle:@"" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles: nil];
     }
     return _waitingDialog;
 }
@@ -35,7 +35,7 @@
 //        text = [options valueForKey:@"text"];
 //    }
 //    @catch (NSException *exception) {
-//        DLog(@"Cannot read text argument")
+//        NSLog(@"Cannot read text argument")
 //    }
 //
 //    [self showWaitingDialogWithText:text];
@@ -48,7 +48,7 @@
         text = [command.arguments objectAtIndex:0];
     }
     @catch (NSException *exception) {
-        DLog(@"Cannot read text argument")
+        NSLog(@"Cannot read text argument")
     }
     
     [self showWaitingDialogWithText:text];
