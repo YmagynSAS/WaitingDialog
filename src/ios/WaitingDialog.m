@@ -48,7 +48,7 @@
         text = [command.arguments objectAtIndex:0];
     }
     @catch (NSException *exception) {
-        NSLog(@"Cannot read text argument")
+        NSLog(@"Cannot read text argument");
     }
     
     [self showWaitingDialogWithText:text];
