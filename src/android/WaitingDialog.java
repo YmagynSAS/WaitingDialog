@@ -1,8 +1,8 @@
-package org.apache.cordova;
+package org.apache.cordova.device;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.LOG;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.LOG;
 import org.json.JSONArray;
 import org.json.JSONException;
 import android.app.ProgressDialog;
